@@ -1,0 +1,92 @@
+
+:root {
+  --color-primary: #1e3a8a; /* Navy blue */
+  --color-secondary: #10b981; /* Eco green */
+  --color-dark: #1f2937;
+  --color-gray: #6b7280;
+  --color-light: #f9fafb;
+
+  --font-main: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-dark);
+  background: var(--color-light);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--color-light);
+}
+ h1 {
+  line-height:3.7rem; /* adjust as needed */
+}
+
+
+p {
+  color: var(--color-light);
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+
+}
+
+.btn-primary {
+  background: var(--color-light);
+  color: #000;
+}
+
+.btn-primary:hover {
+  background: #162d66;
+}
+
+.btn-secondary {
+  background: var(--color-primary);
+  color: #fff;
+  font-size:14px;
+  padding:17px 110px;
+}
+
+.btn-secondary:hover {
+  background: #0b8a67;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+}
+.shadow {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
