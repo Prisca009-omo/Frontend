@@ -9,12 +9,12 @@ return(
     </div>
 
 <div id="austatcontainer">
-    <div id="austat1">
+    <div className="austat-ui">
 <AboutUs01Stats number="28+" stat="Years Business"/>
 <AboutUs01Stats number="5150" stat="Projects Achivements"/>
     </div>
 
-    <div id="austat2">
+    <div className="austat-ui">
 <AboutUs01Stats number="26k" stat="Expert Members"/>
 <AboutUs01Stats number="15+" stat="No. of Branches"/>
     </div>

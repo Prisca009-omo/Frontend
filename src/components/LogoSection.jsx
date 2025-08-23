@@ -7,6 +7,7 @@ export default function LogoSection (){
             <img src="/Images/LogoSection/61b199ebd5c95a63b3329b65c8c5828def7b0abc.png" alt="" />
             <p>We are recognized all over the world - Our Awards Through </p>
         </div>
+        
         <div id="cards">
             <h2>All Major Cards Accepted</h2>
             <div className="cards-subsection">

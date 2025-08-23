@@ -257,46 +257,6 @@ section{
 }
 
 
-
-
-/* .singlereview-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-  background-color: #f4f4f4;
-  text-align: center;
-  width: 1440px;
-  height: 526px;
-  
-}
-
-.singlereview-section img{
-    display: block;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.singlereview-section p{
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 10px 0 0;
-}
-
-
-.singlereview-section input{
-     width: 52px;
-     height: 52px;
-     object-fit: contain;
-     border: none;
-     cursor: pointer;
-     display: flex;
-     align-items: center;
-     gap: 10px;
-} */
-
-
 /* about us 01 */
 .aboutus01-section{
     display: flex;
@@ -327,18 +287,16 @@ section{
 }
 
 
-#austat1{
+.austat-ui{
     display: flex;
     height: 144px;
     width: 570px;
     margin-bottom: 50px ;
+    
 }
 
-#austat2{
-    display: flex;
-    height: 144px;
-    width: 570px;
-
+.austat-ui p{
+    font-size: 24px;
 }
 
 .aboutus01stats-section{
@@ -459,11 +417,15 @@ margin-left: 0px;
 .aboutus02{
    display: flex;
     height: 889px;
-    width: 1440px;
+    /* max-width: 1200px; */
     background-color: #FAE084;
     padding: 120px;
+    justify-content: space-between;
 }
 
+.aboutus02 div{
+    margin-left:0px ;
+}
 
 .aboutus02 img{
     border-radius: 150px;
@@ -638,6 +600,7 @@ margin-top:40px ;
 }
 
 .review-title img{
+    margin-bottom: 5px;
     width: 178px;
     height: 34px;
 }
@@ -664,7 +627,6 @@ margin-top:40px ;
 .review-cards{
     height: 370px;
     width: 370px;
-    /* aspect-ratio: 1 / 1; */
     background-color: #FFFFFF;
     margin: 10px;
     text-align: left;
@@ -959,7 +921,6 @@ justify-items: center;
 .logo-section #awards{
     background-color: #091054;
     width: 720px;
-    height: 510px;
     color: #FFFFFF;
     text-align: center;
     align-items: center;
@@ -984,7 +945,7 @@ justify-items: center;
     }
 
     
-    .logo-section #cards{
+.logo-section #cards{
         width: 418px;
         height: 270px;
         text-align: left;
@@ -994,20 +955,20 @@ justify-items: center;
         margin-left: 120px;
     }
     
-    .logo-section #cards h2{
+.logo-section #cards h2{
         font-size: 48px;
         width: 388px;
         height: 120px;
     }
     
-.logo-section .cards-subsection{
+.logo-section #cards .cards-subsection{
  /* height: 122px; */
  height: auto;
  width: 418px;
  display: flex;
 }
 
-.logo-section .cards-subsection div{
+.logo-section #cards .cards-subsection div{
     display: flex;
     border-radius: 8px;
     height: 54px;
@@ -1019,7 +980,7 @@ justify-items: center;
 }
 
 
-.logo-section .cards-subsection img{
+.logo-section #cards .cards-subsection img{
         width: auto;
         height: 60%;
         margin-right: 9px;
