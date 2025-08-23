@@ -362,9 +362,8 @@ margin-left: 0px;
 /*services*/
 .services-section{
     background-color: #F4F4F4;
-    /* height: 1094px; */
-    /* width:1440px; */
-    width: 100%;
+    height: 1094px;
+    width:1440px;
     text-align: center;
     justify-items: center;
     padding-top: 120px;
