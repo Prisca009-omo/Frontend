@@ -6,9 +6,9 @@ export default function Portfolio(){
             Nunc pellentesque aliquam leo leo ipsum tellus elit et adipiscing mauris laoreet sed turpis in purus turpis in lectus amet nisl
         </p>
         <div style={{display:"flex"}}>
-            <img src="src\assets\Images\Portfolio\108ede834f196f3ed314d3b136a88d457af7f0aa.png" alt="" />
-            <img src="src\assets\Images\Portfolio\db611427ef16506cffc58b2e14dcdb3ad3fae71a.png" alt="" />
-            <img src="src\assets\Images\Portfolio\0e66f8e9c4da47f9695a194dbf281686c150ca3c.png" alt="" />
+            <img src="/Images/Portfolio/108ede834f196f3ed314d3b136a88d457af7f0aa.png" alt="" />
+            <img src="/Images/Portfolio/db611427ef16506cffc58b2e14dcdb3ad3fae71a.png" alt="" />
+            <img src="/Images/Portfolio/0e66f8e9c4da47f9695a194dbf281686c150ca3c.png" alt="" />
         </div>
         </section>
     );

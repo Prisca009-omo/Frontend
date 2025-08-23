@@ -23,9 +23,9 @@ return(
     </div>
 
 <div style={{marginLeft: "100px"}}>
-<img style={{position:"absolute", left:"870px" }} src="src\assets\Images\AboutUs02\b867aa2995e3880fe87d03bfd4a8999eb02e6f1a.png" alt="" />
-<img style={{position:"relative", left:"-30px", top:"280px" }} src="src\assets\Images\AboutUs02\fce6cef4dbbdd45294d242c7a14660367c055cdb.png" alt="" />
-<img style={{position:"relative", left:"10px", top:"300px" }}src="src\assets\Images\AboutUs02\df6e5d1f0320f85e4dd9aae24dfb52e13e7b80d9.png" alt="" />
+<img style={{position:"relative", left:"350px" }} src="/Images/AboutUs02\b867aa2995e3880fe87d03bfd4a8999eb02e6f1a.png" alt="" />
+<img style={{position:"relative", left:"-30px", top:"280px" }} src="/Images/AboutUs02\fce6cef4dbbdd45294d242c7a14660367c055cdb.png" alt="" />
+<img style={{position:"relative", left:"10px", top:"300px" }}src="/Images/AboutUs02\df6e5d1f0320f85e4dd9aae24dfb52e13e7b80d9.png" alt="" />
 </div>
     </section>
 );

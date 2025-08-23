@@ -1,12 +1,12 @@
 export default function ContactForm(){
     return(
     <section className="contactform-section">
-    <img src="src\assets\Images\f746f29265c0e7f497a12325ec4c85630b45bb68.png" alt="" />
+    <img src="/Images/f746f29265c0e7f497a12325ec4c85630b45bb68.png" alt="" />
     <form action="">
         <h2>Contact Form</h2>
-        <input type="text" />
-        <input type="email" />
-        <input type="tel" />
+        <input type="text" placeholder="Name"/>
+        <input type="email"  placeholder="E-mail address"/>
+        <input type="tel" placeholder="Phone"/>
        <select>
             <option value="option1">Subject</option>
             <option value="option2">Option 2</option>

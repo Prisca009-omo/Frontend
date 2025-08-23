@@ -1,6 +1,6 @@
 export default function({plan, price, discount}){
     return(
-        <section className="pricingcard-section">
+        <div className="pricingcard-section">
             <div>
             <h3>{plan} Plan</h3>
             <p><span>${price}</span> /month</p>
@@ -14,6 +14,6 @@ export default function({plan, price, discount}){
 
             <button>Choose Plan</button>
             </div>
-        </section>
+        </div>
     );
 }

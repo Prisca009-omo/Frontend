@@ -1,6 +1,6 @@
 export default function ServiceCards({service, serviceInfo, serviceLogo}){
     return(
-    <section className="servicecard-section">
+    <div className="servicecard-section">
     <img src={serviceLogo} alt="" />
     <h2>
         {service}
@@ -8,6 +8,6 @@ export default function ServiceCards({service, serviceInfo, serviceLogo}){
     <p>
         {serviceInfo}
     </p>
-    </section>
+    </div>
     );
 }

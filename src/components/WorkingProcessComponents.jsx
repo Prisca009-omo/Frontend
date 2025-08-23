@@ -1,12 +1,12 @@
 export default function WorkingProcessComponent({action, title, explanation}){
     return(
-    <section className="processcomponent-section">
+    <div className="processcomponent-section">
         <div>
             <img src={action} alt="" />
             <h2>{title}</h2>
             <p>{explanation}</p>
         </div>
-        </section>
+        </div>
         );
 
 }
