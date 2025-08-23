@@ -23,8 +23,17 @@ section{
     }
 
     button:hover{
-        background-color: #e55b00;
+        filter: brightness(80%);
     }
+
+    input:hover{
+        filter: brightness(80%);
+    }
+    
+    select:hover{
+        filter: brightness(80%);
+    }
+
 
 
     p{
