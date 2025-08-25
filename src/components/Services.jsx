@@ -19,7 +19,7 @@ export default function Service(){
     <ServiceCards serviceLogo="/Images/Services/house-svgrepo-com.svg" service="Electrical" serviceInfo="Attain's Bots work alongside your team members to"/>
     </div>
 
-    <button id="button" >View all Services</button>
+    <button id="button" onClick={() => window.location.href = "/services"} >View all Services</button>
     
     </section>
 
