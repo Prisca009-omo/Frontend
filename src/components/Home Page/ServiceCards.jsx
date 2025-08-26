@@ -1,7 +1,7 @@
 export default function ServiceCards({service, serviceInfo, serviceLogo}){
     return(
-        <button>
-    <div className="servicecard-section">
+        <button className="servicecard-section">
+    <div>
     <img src={serviceLogo} alt="" />
     <h2>
         {service}
