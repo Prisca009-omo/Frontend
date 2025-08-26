@@ -1,5 +1,6 @@
 export default function ServiceCards({service, serviceInfo, serviceLogo}){
     return(
+        <button>
     <div className="servicecard-section">
     <img src={serviceLogo} alt="" />
     <h2>
@@ -9,5 +10,6 @@ export default function ServiceCards({service, serviceInfo, serviceLogo}){
         {serviceInfo}
     </p>
     </div>
+        </button>
     );
 }
