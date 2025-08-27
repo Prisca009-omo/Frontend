@@ -1,8 +1,10 @@
 ###Important Note -added by Zina
 
-To run this repo, type <u>npm install</u> in the command line.
-Then, put <u>npm install react-router-dom</> for the page-to-page routing to work and to avoid errors.
-Finally run <u>npm start</u>.
+To run this repo, type **npm install** in the command line.
+
+Then, put **npm install react-router-dom** for the page-to-page routing to work and to avoid errors.
+
+Finally run **npm start**.
 
 # Getting Started with Create React App
 
