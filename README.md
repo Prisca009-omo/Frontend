@@ -1,4 +1,4 @@
-###Important Note -added by Zina
+**Important Note -added by Zina**
 
 To run this repo, type **npm install** in the command line.
 
