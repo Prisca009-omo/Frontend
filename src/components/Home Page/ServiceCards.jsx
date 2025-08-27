@@ -1,7 +1,12 @@
-export default function ServiceCards({service, serviceInfo, serviceLogo}){
+import { useNavigate } from "react-router-dom";
+
+export default function ServiceCards({service, serviceInfo, serviceLogo, pageId}){    
+  const navigate = useNavigate();
     return(
-        <button className="servicecard-section">
-    <div>
+        <button
+         className="servicecard-section"
+        onClick={() => navigate(`/service/${pageId}`) }>
+    <div >
     <img src={serviceLogo} alt="" />
     <h2>
         {service}
@@ -10,6 +15,6 @@ export default function ServiceCards({service, serviceInfo, serviceLogo}){
         {serviceInfo}
     </p>
     </div>
-        </button>
+    </button>
     );
 }

@@ -14,7 +14,7 @@ export default function ContactForm(){
             </select>
        <textarea placeholder="Message"></textarea>
 
-        <button>Send Message</button>
+        <button type="submit">Send Message</button>
     </form>
     </section>
     );

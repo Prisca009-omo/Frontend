@@ -22,17 +22,20 @@ function Hero() {
 
       
         <div className="hero-form shadow">
-          <h3>pick the Services you Want</h3>
+          <h3>Pick the Services you Want</h3>
           <form>
             <input type="text" placeholder="Full Name" required />
             <input type="email" placeholder="Email Address" required />
             <input type="tel" placeholder="Phone Number" required />
             <select>
               <option>Services type</option>
+              <option>Furniture Assembly</option>
+              <option>Gutter Cleaning</option>
               <option>Plumbing</option>
               <option>Electrical</option>
               <option>Carpentry</option>
               <option>Painting</option>
+              <option></option>
             </select>
             <button type="submit" className="btn btn-secondary">
               Get Schedule
