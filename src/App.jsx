@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import ServicePageTemplate from "./pages/ServicePageTemplate";
 import Home from './pages/Home';
 import BackToTop from "./components/BacktoTop";
-import Footer from "./pages/footer";
+import Footer from "./components/footer";
 
 function App() {
   return (
