@@ -90,3 +90,80 @@ input:focus, select:focus {
 .shadow {
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
+
+/* for mobile specific service page*/
+.servpagetemp {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-light);
+}
+
+.spagecontainer {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.spagecontainer img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.spagecontainer h1 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.spagecontainer p {
+  font-size: 1rem;
+  color: var(--color-dark);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.spagecontainer button {
+  margin: 0.5rem;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.spagecontainer button:hover {
+  background-color: #162d66;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .spagecontainer {
+    padding: 1.2rem;
+  }
+
+  .spagecontainer h1 {
+    font-size: 1.8rem;
+  }
+
+  .spagecontainer p {
+    font-size: 0.95rem;
+  }
+
+  .spagecontainer button {
+    width: 100%;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+}
+
