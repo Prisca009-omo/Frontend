@@ -1391,13 +1391,7 @@ justify-items: center;
 
 
 
-/* ...existing code... */
 
-/* =========================
-   Responsive Styles
-   ========================= */
-
-/* General responsive fixes */
 img, video {
   max-width: 100%;
   height: auto;
@@ -1414,7 +1408,6 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
   overflow-x: hidden;
 }
 
-/* Remove fixed widths for main containers on small screens */
 @media (max-width: 1200px) {
   .aboutus01-section,
   .aboutus02,
@@ -1688,7 +1681,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
   }
 }
 
-/* Mobile */
+
 @media (max-width: 600px) {
   html, body {
     font-size: 15px;
@@ -1806,10 +1799,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
   }
 }
 
-/* ...existing code... */
 
-
-/* Responsive styles for hero-form (customer intake form) */
 @media (max-width: 992px) {
   .hero-form {
     width: 90vw;
@@ -1853,7 +1843,6 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
 }
 
 
-/* Testimonial Carousel Responsive Styles */
 .testimonial-carousel-container {
   display: flex;
   align-items: center;
@@ -1933,7 +1922,6 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
   }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
   .testimonial-carousel-container {
     flex-direction: column;
@@ -1963,12 +1951,12 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
 .testimonial-carousel-content {
   display: flex;
   flex-direction: column;
-  align-items: center;   /* Center horizontally */
-  justify-content: center; /* Center vertically */
+  align-items: center;   
+  justify-content: center; 
   max-width: 600px;
   margin: 0 100px;
   flex: 1;
-  min-height: 220px; /* Ensures enough height for vertical centering */
+  min-height: 220px; 
 }
 
 .testimonial-carousel-image {
@@ -1979,7 +1967,6 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
 
 
 @media (max-width: 600px) {
-  /* Make the entire portfolio section horizontally scrollable as a row of "cards" */
   .portfolio {
     display: flex;
     flex-direction: row;
@@ -1991,7 +1978,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     box-sizing: border-box;
     align-items: flex-start;
   }
-  /* Group header and description in a single column "card" */
+ 
   .portfolio-header-group {
     display: flex;
     flex-direction: column;
@@ -2058,7 +2045,6 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
 
 
 @media (max-width: 600px) {
-  /* Make the process-section horizontally scrollable and reduce height for mobile */
   .process-section {
     display: flex;
     flex-direction: row;
@@ -2069,10 +2055,10 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     width: 100vw;
     box-sizing: border-box;
     align-items: flex-start;
-    height: auto !important;    /* Override desktop height */
+    height: auto !important;    
     min-height: unset !important;
     max-height: unset !important;
-    padding-top: 30px;          /* Reduce top padding for mobile */
+    padding-top: 30px;         
   }
   .process-header-group {
     display: flex;
@@ -2083,7 +2069,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     box-sizing: border-box;
     margin: 0 8px;
     flex-shrink: 0;
-    height: auto;               /* Let content define height */
+    height: auto;               
   }
   .process-header-group h1 {
     background: #fff;
@@ -2094,7 +2080,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     width: 532px;
     box-sizing: border-box;
     text-align: center;
-    font-size: 36px;            /* Slightly smaller for mobile */
+    font-size: 36px;            
     height: auto;
     min-height: 60px;
     font-weight: bold;
@@ -2120,14 +2106,14 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     align-self: center;
     min-height: 40px;
   }
-  /* Process cards */
+  
   .processcomponent-section {
     flex: 0 0 270px;
     min-width: 270px;
     max-width: 270px;
     box-sizing: border-box;
     margin: 0 8px;
-    height: auto;               /* Let content define height */
+    height: auto;               
     min-height: 180px;
     display: flex;
     flex-direction: column;
@@ -2137,7 +2123,6 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
 
 
 @media (max-width: 600px) {
-  /* Make the pricing-section horizontally scrollable on mobile */
   .pricing-section {
     display: flex;
     flex-direction: row;
@@ -2184,7 +2169,6 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
 }
 
 @media (max-width: 992px) {
-  /* Make the pricing-section horizontally scrollable on tablet */
   .pricing-section {
     display: flex;
     flex-direction: row;
@@ -2230,7 +2214,6 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
   }
 }
 
-/* Hide the heading on mobile only */
 @media (max-width: 600px) {
   .pricing-section h2 {
     display: none !important;
