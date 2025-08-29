@@ -45,79 +45,27 @@ const TestimonialCarousel = () => {
 
   const { name, text, image } = testimonials[currentIndex];
 
-  const styles = {
-    container: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '40px',
-      backgroundColor: '#f7f7f7',
-      textAlign: 'center',
-    },
-    arrowButton: {
-      background: 'none',
-      border: 'none',
-      fontSize: '60px',
-      cursor: 'pointer',
-      color: '#555',
-      marginRight: '70px',
-      marginLeft: '70px',
-    },
-    content: {
-      maxWidth: '1500px',
-      margin: '0 100px',
-    },
-    imageContainer: {
-      position: 'relative', // To position the quote bubble on top
-      display: 'inline-block',
-    },
-    image: {
-      width: '125px',
-      height: '125px',
-      borderRadius: '50%',
-      objectFit: 'cover',
-      marginBottom: '5px',
-    },
-    quoteBubble: {
-      position: 'absolute',
-      top: '-10px',
-      right: '-10px',
-      backgroundColor: '#F1C40F', // Yellow bubble color
-      borderRadius: '50%',
-      width: '30px',
-      height: '30px',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontSize: '1.5rem',
-      color: 'white',
-      fontWeight: 'bold',
-    },
-    text: {
-      fontWeight: 700,
-      fontSize: '24px',
-      color: '#222',
-      marginBottom: '15px',
-      fontFamily: `'Montserrat', sans-serif`,
-      letterSpacing: '0.0000001px',
-    },
-    name: {
-      fontWeight: 600,
-      fontSize: '16px',
-      color: '#666',
-      fontFamily: `'Montserrat', sans-serif`,
-    }
-  };
-
   return (
-    <div style={styles.container}>
-      <button onClick={handlePrev} style={styles.arrowButton}>&#129104;</button>
-      <div style={styles.content}>
-        <img src={image} alt={name} style={styles.image} />
-        <p style={styles.text}>{text}</p>
-        <p style={styles.name}>{name}</p>
+    <div className="testimonial-carousel-container">
+      <button
+        onClick={handlePrev}
+        className="testimonial-carousel-arrow"
+        aria-label="Previous testimonial"
+      >
+        &#129104;
+      </button>
+      <div className="testimonial-carousel-content">
+        <img src={image} alt={name} className="testimonial-carousel-image" />
+        <p className="testimonial-carousel-text">{text}</p>
+        <p className="testimonial-carousel-name">{name}</p>
       </div>
-      <button onClick={handleNext} style={styles.arrowButton}>&#129106;</button>
+      <button
+        onClick={handleNext}
+        className="testimonial-carousel-arrow"
+        aria-label="Next testimonial"
+      >
+        &#129106;
+      </button>
     </div>
   );
 };

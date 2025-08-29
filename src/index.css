@@ -1390,3 +1390,837 @@ justify-items: center;
 
 
 
+
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .clientlogo-section, .cta-section, .review-section, .profesionalsteam-section, .pricing-section, .contactform-section, .blog-section, .logo-section {
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 100%;
+  min-width: 0;
+  padding-left: 0;
+  padding-right: 0;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1200px) {
+  .aboutus01-section,
+  .aboutus02,
+  .services-section,
+  .portfolio,
+  .clientlogo-section,
+  .cta-section,
+  .review-section,
+  .profesionalsteam-section,
+  .pricing-section,
+  .contactform-section,
+  .blog-section,
+  .logo-section {
+    width: 100vw;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Tablet and below */
+@media (max-width: 992px) {
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  .aboutus01-section {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .aboutus01-info {
+    width: 90%;
+    margin: 40px 0 20px 0;
+    text-align: center;
+  }
+  .aboutus01-info h2 {
+    font-size: 2.2rem;
+  }
+  .aboutus01-info p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  #austatcontainer {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .austat-ui {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .aboutus01stats-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .aboutus01stats-section h1 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .aboutus01stats-section hr {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .aboutus02 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: 100vw;
+  }
+  .aboutus02container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .au02imagecontainer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  #first, #second, #third {
+    position: static;
+    width: 60vw;
+    height: auto;
+    margin: 10px auto;
+    left: unset;
+    top: unset;
+  }
+  #experience h1, .aboutus02 button {
+    width: 100%;
+    font-size: 2rem;
+  }
+  #experience p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .aboutuscomponent {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .aboutuscomponent p {
+    width: 100%;
+  }
+  .services-section {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: 100vw;
+  }
+  .servicecard-ui {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .servicecard-section {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+  }
+  .portfolio {
+    height: auto;
+    padding-top: 60px;
+    width: 100vw;
+  }
+  .portfolio p, .portfolio h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .portfolio img {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+  }
+  .clientlogo-section {
+    height: auto;
+    padding-top: 60px;
+    width: 100vw;
+  }
+  .cta-section {
+    height: auto;
+    padding: 40px 0;
+    width: 100vw;
+  }
+  .cta-section h2, .cta-section button, .cta-section button:first-of-type {
+    margin-left: 0;
+    width: 90vw;
+    max-width: 350px;
+  }
+  .review-section {
+    height: auto;
+    padding-top: 60px;
+    width: 100vw;
+  }
+  .review-title {
+    width: 100%;
+    height: auto;
+  }
+  .review-cards-ui {
+    flex-direction: column;
+    align-items: center;
+  }
+  .review-cards {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+    padding: 20px;
+  }
+  .profesionalsteam-section {
+    height: auto;
+    padding-top: 60px;
+    width: 100vw;
+  }
+  .profesionalsteam-section h2 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .profesionalsteam-section #team-members-ui {
+    flex-direction: column;
+    align-items: center;
+  }
+  .teammembers-section img {
+    width: 90vw;
+    max-width: 270px;
+    height: auto;
+  }
+  .pricing-section {
+    height: auto;
+    width: 100vw;
+  }
+  .pricing-section h2 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .pricingcard-section {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .contactform-section {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+  }
+  .contactform-section img,
+  .contactform-section form {
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .contactform-section form button,
+  .contactform-section form input,
+  .contactform-section form select,
+  .contactform-section form textarea {
+    width: 90vw;
+    max-width: 600px;
+    margin-left: 0;
+  }
+  .blog-section {
+    width: 100vw;
+    height: auto;
+    padding-top: 60px;
+  }
+  .blog-section #blogcard-ui {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blogcard-section {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+    margin: 20px auto;
+  }
+  .logo-section {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+  }
+  .logo-section #awards,
+  .logo-section #cards {
+    width: 100vw;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .logo-section #cards {
+    margin-left: 0;
+  }
+  .logo-section #cards .cards-subsection {
+    flex-direction: column;
+    width: 100vw;
+    max-width: 350px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  html, body {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .hero-text button,
+  .hero-form button {
+    width: 90vw;
+    max-width: 300px;
+    font-size: 1.1rem;
+    height: 50px;
+  }
+  .hero-form,
+  .hero-form input,
+  .hero-form select {
+    width: 90vw;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    height: auto;
+  }
+  .aboutus01-section {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .aboutus01-info {
+    margin: 20px 0 10px 0;
+  }
+  .aboutus01-info h2 {
+    font-size: 1.5rem;
+  }
+  .aboutus01-info p {
+    font-size: 0.95rem;
+  }
+  .austat-ui p {
+    font-size: 1rem;
+  }
+  .aboutus01stats-section h1 {
+    font-size: 2rem;
+  }
+  .process-section,
+  .services-section,
+  .portfolio,
+  .clientlogo-section,
+  .cta-section,
+  .review-section,
+  .profesionalsteam-section,
+  .pricing-section,
+  .contactform-section,
+  .blog-section,
+  .logo-section {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 100vw;
+    min-width: 0;
+  }
+  .servicecard-section,
+  .review-cards,
+  .pricingcard-section,
+  .blogcard-section {
+    width: 95vw;
+    max-width: 320px;
+    padding: 10px;
+    margin: 10px auto;
+  }
+  .portfolio img,
+  .teammembers-section img {
+    width: 95vw;
+    max-width: 320px;
+    height: auto;
+  }
+  .cta-section h2,
+  .cta-section button,
+  .cta-section button:first-of-type {
+    margin-left: 0;
+    width: 95vw;
+    max-width: 320px;
+    font-size: 1.2rem;
+  }
+  .contactform-section form button,
+  .contactform-section form input,
+  .contactform-section form select,
+  .contactform-section form textarea {
+    width: 95vw;
+    max-width: 320px;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+  .logo-section #awards,
+  .logo-section #cards {
+    width: 100vw;
+    max-width: 100%;
+    padding-top: 20px;
+  }
+  .logo-section #cards .cards-subsection {
+    flex-direction: column;
+    width: 100vw;
+    max-width: 320px;
+  }
+  .gg-footer {
+    padding: 1rem 1rem;
+  }
+  .gg-socials,
+  .gg-privacy {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .hero-form {
+    width: 90vw;
+    max-width: 400px;
+    padding: 24px;
+    margin: 0 auto;
+    height: auto;
+  }
+  .hero-form input,
+  .hero-form select,
+  .hero-form button {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-form {
+    width: 98vw;
+    max-width: 340px;
+    padding: 10px;
+    margin: 0 auto;
+    height: auto;
+  }
+  .hero-form input,
+  .hero-form select,
+  .hero-form button {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    font-size: 1rem;
+    height: 48px;
+    margin: 6px 0;
+  }
+  .hero-form h3 {
+    font-size: 1.2rem;
+  }
+}
+
+
+.testimonial-carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #f7f7f7;
+  text-align: center;
+  flex-direction: row;
+}
+
+.testimonial-carousel-arrow {
+  background: none;
+  border: none;
+  font-size: 60px;
+  cursor: pointer;
+  color: #555;
+  margin: 0 70px;
+  align-self: center;
+  transition: color 0.2s;
+}
+.testimonial-carousel-arrow:active,
+.testimonial-carousel-arrow:focus {
+  color: #222;
+}
+
+.testimonial-carousel-content {
+  max-width: 600px;
+  margin: 0 100px;
+  flex: 1;
+}
+
+.testimonial-carousel-image {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.testimonial-carousel-text {
+  font-weight: 700;
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.testimonial-carousel-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #666;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .testimonial-carousel-container {
+    padding: 24px;
+  }
+  .testimonial-carousel-arrow {
+    font-size: 48px;
+    margin: 0 30px;
+  }
+  .testimonial-carousel-content {
+    max-width: 400px;
+    margin: 0 30px;
+  }
+  .testimonial-carousel-image {
+    width: 100px;
+    height: 100px;
+  }
+  .testimonial-carousel-text {
+    font-size: 1.3rem;
+  }
+  .testimonial-carousel-name {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial-carousel-container {
+    flex-direction: column;
+    padding: 16px 4px;
+  }
+  .testimonial-carousel-arrow {
+    font-size: 36px;
+    margin: 10px 0;
+    align-self: center;
+  }
+  .testimonial-carousel-content {
+    max-width: 95vw;
+    margin: 0;
+  }
+  .testimonial-carousel-image {
+    width: 80px;
+    height: 80px;
+  }
+  .testimonial-carousel-text {
+    font-size: 1.1rem;
+  }
+  .testimonial-carousel-name {
+    font-size: 0.95rem;
+  }
+}
+
+.testimonial-carousel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  justify-content: center; 
+  max-width: 600px;
+  margin: 0 100px;
+  flex: 1;
+  min-height: 220px; 
+}
+
+.testimonial-carousel-image {
+  display: block;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+
+@media (max-width: 600px) {
+  .portfolio {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: flex-start;
+  }
+ 
+  .portfolio-header-group {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 678px;
+    min-width: 678px;
+    max-width: 678px;
+    box-sizing: border-box;
+    margin: 0 8px;
+    flex-shrink: 0;
+  }
+  .portfolio-header-group h1 {
+    background: #091054;
+    color: #FFFFFF;
+    border-radius: 8px 8px 0 0;
+    padding: 16px 8px 8px 8px;
+    margin: 0;
+    width: 678px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 48px;
+    height: 120px;
+    font-weight: bold;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio-header-group p {
+    background: #091054;
+    color: #FFFFFF;
+    border-radius: 0 0 8px 8px;
+    padding: 8px 8px 16px 8px;
+    margin: 0;
+    width: 570px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+  /* Portfolio cards */
+  .portfolio-cards > * {
+    flex: 0 0 370px;
+    min-width: 370px;
+    max-width: 370px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    margin: 0 8px;
+  }
+  .portfolio-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: auto;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .process-section {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: flex-start;
+    height: auto !important;    
+    min-height: unset !important;
+    max-height: unset !important;
+    padding-top: 30px;         
+  }
+  .process-header-group {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 532px;
+    min-width: 532px;
+    max-width: 532px;
+    box-sizing: border-box;
+    margin: 0 8px;
+    flex-shrink: 0;
+    height: auto;               
+  }
+  .process-header-group h1 {
+    background: #fff;
+    color: #091054;
+    border-radius: 8px 8px 0 0;
+    padding: 16px 8px 8px 8px;
+    margin: 0;
+    width: 532px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 36px;            
+    height: auto;
+    min-height: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .process-header-group p {
+    background: #fff;
+    color: #091054;
+    border-radius: 0 0 8px 8px;
+    padding: 8px 8px 16px 8px;
+    margin: 0;
+    width: 472px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    min-height: 40px;
+  }
+  
+  .processcomponent-section {
+    flex: 0 0 270px;
+    min-width: 270px;
+    max-width: 270px;
+    box-sizing: border-box;
+    margin: 0 8px;
+    height: auto;               
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .pricing-section {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    height: auto !important;
+    min-height: unset !important;
+    max-height: unset !important;
+  }
+  .pricing-section h2 {
+    flex: 0 0 631px;
+    min-width: 631px;
+    max-width: 631px;
+    background: #fff;
+    color: #091054;
+    border-radius: 8px;
+    padding: 16px 8px;
+    margin: 0 8px 0 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .pricingcard-section {
+    flex: 0 0 370px;
+    min-width: 370px;
+    max-width: 370px;
+    box-sizing: border-box;
+    margin: 0 8px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .pricing-section {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    height: auto !important;
+    min-height: unset !important;
+    max-height: unset !important;
+  }
+  .pricing-section h2 {
+    flex: 0 0 631px;
+    min-width: 631px;
+    max-width: 631px;
+    background: #fff;
+    color: #091054;
+    border-radius: 8px;
+    padding: 16px 8px;
+    margin: 0 8px 0 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .pricingcard-section {
+    flex: 0 0 370px;
+    min-width: 370px;
+    max-width: 370px;
+    box-sizing: border-box;
+    margin: 0 8px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing-section h2 {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) {
+  .pricing-section h2 {
+    display: none !important;
+  }
+}
