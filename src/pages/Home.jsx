@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import "../index.css";
-// import "./global.css";
 import Hero from "../components/Home Page/Hero";
 import TestimonialCarousel from "../components/Home Page/TestimonialCarousel";
 import Service from "../components/Home Page/Services";
@@ -21,9 +20,7 @@ export default function Home() {
 
   return (
     <>
-    {/* <Home/> */}
       <Hero />
-    {/* <SingleReview/>*/}
     <TestimonialCarousel/>
     <AboutUs01/>
     <WorkingProcess/>
