@@ -1,5 +1,7 @@
 **Important Note -added by Zina**
 
+If the node modules folder is NOT present:
+
 To run this repo, type **npm install** in the command line.
 
 Then, put **npm install react-router-dom** for the page-to-page routing to work and to avoid errors.
