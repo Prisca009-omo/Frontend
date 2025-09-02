@@ -1,6 +1,6 @@
 export default function Portfolio(){
     return(
-        <section className="portfolio">
+        <section id="portfolio">
         <h1>Take A Look At Our Recent Projects</h1>
         <p>
             Nunc pellentesque aliquam leo leo ipsum tellus elit et adipiscing mauris laoreet sed turpis in purus turpis in lectus amet nisl

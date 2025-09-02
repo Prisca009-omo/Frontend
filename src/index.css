@@ -498,7 +498,7 @@ section{
 
 
 /* about us 01 */
-.aboutus01-section{
+#aboutus01-section{
     display: flex;
     background-color:#091054 ;
     font-family: Arial, sans-serif;
@@ -600,7 +600,7 @@ margin-left: 0px;
 }
 
 /*services*/
-.services-section{
+#services-section{
     background-color: #F4F4F4;
     height: 1094px;
     width:1440px;
@@ -610,7 +610,7 @@ margin-left: 0px;
     padding-bottom: 120px;
 }
 
-.services-section #button{
+#services-section #button{
     background-color: #F4F4F4;
     color: #091054;
     border-color: #091054;
@@ -620,7 +620,7 @@ margin-left: 0px;
     border-radius: 8px;
 }
 
-.services-section h1{
+#services-section h1{
     font-size: 48px;
 }
 
@@ -753,7 +753,7 @@ margin-top:40px ;
 }
 
 /*portfolio*/
-.portfolio{
+#portfolio{
     justify-items: center;
     background-color: #091054;
     text-align: center;
@@ -762,20 +762,20 @@ margin-top:40px ;
     padding-top: 120px;
 }
 
-.portfolio p{
+#portfolio p{
     color: #FFFFFF;
     width: 570px;
     font-weight: lighter;
 }
 
- .portfolio h1{
+ #portfolio h1{
     color: #FFFFFF;
     width: 678px;
     height: 120px;
     font-size: 48px;
  }
 
-.portfolio img{
+#portfolio img{
     border-radius: 8px;
     width: 370px;
     height: 498px;
@@ -1068,20 +1068,20 @@ width: 314px;
 }
 
 /*contact form*/
-.contactform-section{
+#contactform-section{
     display: flex;
     width: 1440px;
     height: 834px;
     background-color: #f4f4f4;
 }
 
-.contactform-section img{
+#contactform-section img{
     height: 834px;
     width: 705px;
     object-fit: cover;
 }
 
-.contactform-section form{
+#contactform-section form{
     height: 834px;
     width: 705px;
     justify-content: left;
@@ -1090,7 +1090,7 @@ width: 314px;
     margin-left: 20px;
 }
 
-.contactform-section form button{
+#contactform-section form button{
 
     background-Color:#091054;
     color: #FFFFFF; 
@@ -1103,13 +1103,13 @@ width: 314px;
 
 }
 
-.contactform-section form h2{
+#contactform-section form h2{
     margin-left: 18px;
     font-size: 48px;
 }
 
 
-.contactform-section form input{
+#contactform-section form input{
     height: 54px;
     width: 276px;
     color: #091054;
@@ -1122,7 +1122,7 @@ width: 314px;
 
 }
 
-.contactform-section form select{
+#contactform-section form select{
     height: 84px;
     width: 294px;
     color: #091054;
@@ -1133,7 +1133,7 @@ width: 314px;
     margin-left: 18px;
     background-color: transparent;
 }
-.contactform-section form textarea{
+#contactform-section form textarea{
     height: 106px;
     width: 589px;
     padding: 14px 8px;
@@ -1145,7 +1145,7 @@ width: 314px;
 }
 
 /*blog*/
-.blog-section {
+#blog-section {
     width: 1440px;
     height: 834px;
     background-color: #FFFFFF;
@@ -1155,12 +1155,12 @@ width: 314px;
     padding-top: 180px;
 }
 
-.blog-section h2 {
+#blog-section h2 {
     font-size: 48px;
 }
 
 
-.blog-section #blogcard-ui{
+#blog-section #blogcard-ui{
 display: flex;
 }
 
@@ -1402,7 +1402,7 @@ img, video {
   display: block;
 }
 
-section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .clientlogo-section, .cta-section, .review-section, .profesionalsteam-section, .pricing-section, .contactform-section, .blog-section, .logo-section {
+section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .clientlogo-section, .cta-section, .review-section, .profesionalsteam-section, .pricing-section, #contactform-section, #blog-section, .logo-section {
   box-sizing: border-box;
   width: 100vw;
   max-width: 100%;
@@ -1413,17 +1413,17 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
 }
 
 @media (max-width: 1200px) {
-  .aboutus01-section,
+  #aboutus01-section,
   .aboutus02,
-  .services-section,
-  .portfolio,
+  #services-section,
+  #portfolio,
   .clientlogo-section,
   .cta-section,
   .review-section,
   .profesionalsteam-section,
   .pricing-section,
-  .contactform-section,
-  .blog-section,
+  #contactform-section,
+  #blog-section,
   .logo-section {
     width: 100vw;
     max-width: 100%;
@@ -1439,7 +1439,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     gap: 20px;
     padding: 20px;
   }
-  .aboutus01-section {
+  #aboutus01-section {
     flex-direction: column;
     align-items: center;
     height: auto;
@@ -1531,7 +1531,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
   .aboutuscomponent p {
     width: 100%;
   }
-  .services-section {
+  #services-section {
     height: auto;
     padding-top: 60px;
     padding-bottom: 40px;
@@ -1547,16 +1547,16 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     max-width: 350px;
     height: auto;
   }
-  .portfolio {
+  #portfolio {
     height: auto;
     padding-top: 60px;
     width: 100vw;
   }
-  .portfolio p, .portfolio h1 {
+  #portfolio p, #portfolio h1 {
     width: 100%;
     font-size: 1.5rem;
   }
-  .portfolio img {
+  #portfolio img {
     width: 90vw;
     max-width: 350px;
     height: auto;
@@ -1628,32 +1628,32 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     margin: 20px auto;
     padding: 20px;
   }
-  .contactform-section {
+  #contactform-section {
     flex-direction: column;
     width: 100vw;
     height: auto;
   }
-  .contactform-section img,
-  .contactform-section form {
+  #contactform-section img,
+  #contactform-section form {
     width: 100vw;
     max-width: 100%;
     height: auto;
     margin: 0;
   }
-  .contactform-section form button,
-  .contactform-section form input,
-  .contactform-section form select,
-  .contactform-section form textarea {
+  #contactform-section form button,
+  #contactform-section form input,
+  #contactform-section form select,
+  #contactform-section form textarea {
     width: 90vw;
     max-width: 600px;
     margin-left: 0;
   }
-  .blog-section {
+  #blog-section {
     width: 100vw;
     height: auto;
     padding-top: 60px;
   }
-  .blog-section #blogcard-ui {
+  #blog-section #blogcard-ui {
     flex-direction: column;
     align-items: center;
   }
@@ -1715,7 +1715,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     font-size: 1rem;
     height: auto;
   }
-  .aboutus01-section {
+  #aboutus01-section {
     padding-top: 30px;
     padding-bottom: 20px;
   }
@@ -1735,15 +1735,15 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     font-size: 2rem;
   }
   .process-section,
-  .services-section,
-  .portfolio,
+  #services-section,
+  #portfolio,
   .clientlogo-section,
   .cta-section,
   .review-section,
   .profesionalsteam-section,
   .pricing-section,
-  .contactform-section,
-  .blog-section,
+  #contactform-section,
+  #blog-section,
   .logo-section {
     padding-top: 30px;
     padding-bottom: 20px;
@@ -1759,7 +1759,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     padding: 10px;
     margin: 10px auto;
   }
-  .portfolio img,
+  #portfolio img,
   .teammembers-section img {
     width: 95vw;
     max-width: 320px;
@@ -1773,10 +1773,10 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     max-width: 320px;
     font-size: 1.2rem;
   }
-  .contactform-section form button,
-  .contactform-section form input,
-  .contactform-section form select,
-  .contactform-section form textarea {
+  #contactform-section form button,
+  #contactform-section form input,
+  #contactform-section form select,
+  #contactform-section form textarea {
     width: 95vw;
     max-width: 320px;
     margin-left: 0;
@@ -1971,7 +1971,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
 
 
 @media (max-width: 600px) {
-  .portfolio {
+  #portfolio {
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -1983,7 +1983,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     align-items: flex-start;
   }
  
-  .portfolio-header-group {
+  #portfolio-header-group {
     display: flex;
     flex-direction: column;
     flex: 0 0 678px;
@@ -1993,7 +1993,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     margin: 0 8px;
     flex-shrink: 0;
   }
-  .portfolio-header-group h1 {
+  #portfolio-header-group h1 {
     background: #091054;
     color: #FFFFFF;
     border-radius: 8px 8px 0 0;
@@ -2010,7 +2010,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     align-items: center;
     justify-content: center;
   }
-  .portfolio-header-group p {
+  #portfolio-header-group p {
     background: #091054;
     color: #FFFFFF;
     border-radius: 0 0 8px 8px;
@@ -2027,7 +2027,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     align-self: center;
   }
   /* Portfolio cards */
-  .portfolio-cards > * {
+  #portfolio-cards > * {
     flex: 0 0 370px;
     min-width: 370px;
     max-width: 370px;
@@ -2035,7 +2035,7 @@ section, .hero, .aboutus01-section, .aboutus02, .services-section, .portfolio, .
     box-sizing: border-box;
     margin: 0 8px;
   }
-  .portfolio-cards {
+  #portfolio-cards {
     display: flex;
     flex-direction: row;
     gap: 16px;

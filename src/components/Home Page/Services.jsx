@@ -7,7 +7,7 @@ export default function Service(){
   const navigate = useNavigate();
 
     return(
-        <section className="services-section">
+        <section id="services-section">
     <h1>
         Our Top Rated Services
     </h1>

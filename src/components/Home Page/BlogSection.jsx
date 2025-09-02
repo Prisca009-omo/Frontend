@@ -2,7 +2,7 @@ import BlogCards from "./BlogCards";
 
 export default function({blogImg, date, blogTitle}){
    return(
-<section className="blog-section">
+<section id="blog-section">
     <h2>Our Recent Blog post</h2>
     <div id="blogcard-ui">
     <BlogCards blogImg="/Images/BlogSection/7fa87698d8fb45aa4ea136d4b6731c7fdf420ad1.png" date="Garden / Sep 26, 2022 " blogTitle="Top 5 Secret Home Repairing Tips Discussions"/>

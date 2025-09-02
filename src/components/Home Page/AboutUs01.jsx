@@ -2,7 +2,7 @@ import AboutUs01Stats from "./AboutUs01Stats";
 
 export default function AboutUs01(){
 return(   
-<section className="aboutus01-section"> 
+<section id="aboutus01-section"> 
     <div className="aboutus01-info">
 <h2>One Stop Handyman Service</h2>
 <p>We prioritize sustainability in every aspect of our work, aiming to create a greener and more eco-conscious future.</p>
