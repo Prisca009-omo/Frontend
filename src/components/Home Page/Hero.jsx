@@ -1,6 +1,10 @@
 import React from "react";
+import { useNavigate,} from "react-router-dom";
 
 function Hero() {
+
+    const navigate = useNavigate();
+
   return (
     <section className="hero">
       <div className="container hero-container">
@@ -12,7 +16,7 @@ function Hero() {
             reliable, green-focused handyman solutions
             for all your home needs.
           </p>
-          <button>Book Your Shedule</button>
+          <button onClick={() => navigate("/booking")}>Book Your Shedule</button>
         </div>
 
     
@@ -30,11 +34,18 @@ function Hero() {
             <select>
               <option>Services type</option>
               <option>Furniture Assembly</option>
-              <option>Gutter Cleaning</option>
-              <option>Plumbing</option>
-              <option>Electrical</option>
-              <option>Carpentry</option>
-              <option>Painting</option>
+              <option >Gutter Cleaning</option>
+              <option >Home Repairs</option>
+              <option >Painting</option>
+              <option >Plumbing</option>
+              <option >House Siding</option>
+              <option >Carpentry</option>
+              <option >Electrical</option>
+              <option >Outdoor Living</option>
+              <option >Pools</option>
+              <option >Hardscaping</option>
+              <option >Patios</option>
+              <option >Outdoor Kitchens</option>
             </select>
             <button type="submit" className="btn btn-secondary">
               Get Schedule
