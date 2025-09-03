@@ -5,6 +5,11 @@ import ServicePageTemplate from "./pages/ServicePageTemplate";
 import Home from './pages/Home';
 import BackToTop from "./components/BacktoTop";
 import Footer from "./components/footer";
+import ContactForm from "./components/Home Page/ContactForm";
+import AboutUs01 from "./components/Home Page/AboutUs01";
+import AboutUs02 from "./components/Home Page/AboutUs02";
+import Portfolio from "./components/Home Page/Portfolio";
+import BlogSection from "./components/Home Page/BlogSection";
 
 function App() {
   return (
@@ -16,6 +21,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={< ServiceListings/>} />
         <Route path="/service/:pageId" element={<ServicePageTemplate/>} />
+        <Route path="/about" element={<AboutUs01/>}/>
+        <Route path="/gallery" element={<Portfolio/>}/>
+        <Route path="/blog" element={<BlogSection/>}/>
+        <Route path="/contact" element={<ContactForm/>}/>
       </Routes>
     </Router>
     <Footer/>
