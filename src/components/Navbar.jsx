@@ -20,6 +20,7 @@ function Navbar() {
           <a href="/gallery">Gallery</a>
           <a href="/blog">Blog</a>
           <a href="/contact">Contact</a>
+          <a href="/booking">Book a Service</a>
         </div>
 
         <div className="phone">

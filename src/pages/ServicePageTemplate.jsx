@@ -49,7 +49,7 @@ export default function ServicePageTemplate(){
             <h2>Price: ${content.price}
               {/*{service.price} */}
             </h2>
-            <div><button>Pay for Service</button></div>
+            <div><button onClick={() => navigate("/booking")}>Book Service</button></div>
             <div><button onClick={() => navigate("/") }>Back to Home</button></div>
             <div><button onClick={() => navigate("/services") }>Back to Services</button></div>
             </div>

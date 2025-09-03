@@ -35,7 +35,6 @@ function Hero() {
               <option>Electrical</option>
               <option>Carpentry</option>
               <option>Painting</option>
-              <option></option>
             </select>
             <button type="submit" className="btn btn-secondary">
               Get Schedule

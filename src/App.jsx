@@ -10,6 +10,7 @@ import AboutUs01 from "./components/Home Page/AboutUs01";
 import AboutUs02 from "./components/Home Page/AboutUs02";
 import Portfolio from "./components/Home Page/Portfolio";
 import BlogSection from "./components/Home Page/BlogSection";
+import Booking from "./pages/Booking";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/gallery" element={<Portfolio/>}/>
         <Route path="/blog" element={<BlogSection/>}/>
         <Route path="/contact" element={<ContactForm/>}/>
+        <Route path="/booking" element={<Booking/>}/>
       </Routes>
     </Router>
     <Footer/>

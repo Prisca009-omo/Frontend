@@ -2228,3 +2228,85 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     display: none !important;
   }
 }
+
+/*booking form*/
+#bookingform{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    /* background-color: #f4f4f4; */
+    background-image: url("/public/Images/bg-main.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+
+#bookingform form{
+    height: 834px;
+    width: 705px;
+    justify-content: left;
+    align-items: center;
+    margin-top: 120px;
+    margin-left: 20px;
+}
+
+#bookingform form button{
+
+    background-Color:#091054;
+    color: #FFFFFF; 
+    height: 80px;
+    width: 40%;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 18px;
+
+}
+
+#bookingform form h2{
+    margin-left: 18px;
+    font-size: 48px;
+    color:  #FFFFFF;;
+}
+
+
+#bookingform form input{
+    height: 84px;
+    width: 70vw;
+    color: #091054;
+    padding: 14px 8px;
+    border-width: 1px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    margin-left: 18px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+#bookingform form select{
+    height: 84px;
+    width: 70vw;
+    color: #091054;
+    padding: 14px 8px;
+    border-width: 1px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    margin-left: 18px;
+    background-color: transparent;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+#bookingform form textarea{
+    height: 106px;
+    width: 70vw;
+    padding: 14px 8px;
+    border-width: 1px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    margin-left: 18px;
+    background-color: transparent;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
