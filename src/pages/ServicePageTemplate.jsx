@@ -29,10 +29,10 @@ export default function ServicePageTemplate(){
     navigate(`/booking/${pageId}`, { state: { defaultOption } });
   };
 
-  const [services, setServices] = useState([]);
+  const [service, setServices] = useState([]);
 
   useEffect(() => {
-    fetch({/*"http://localhost:5000/api/services/id" replace with backend url*/}) 
+    fetch("http://localhost:3000/api/services/id") 
       .then(res => res.json())
       .then(data => setServices(data))
       .catch(err => console.error("Error fetching services:", err));
@@ -44,21 +44,23 @@ export default function ServicePageTemplate(){
             <img src={content.image}  alt=""/>
             {/*service.image*/}
             
-            <h1>{content.title}
-              {/* {service.title} replace with backend title*/}
+            <h1>
+              {content.title}
+              {/* {service.title} */}
             </h1>
-            <p>{content.description}
-              {/* {service.description} replace with backend description */}
+            <p>
+              {content.description}
+              {/* {service.description} */}
             </p>
-            <h2>Price: ${content.price}
-              {/*{service.price} */}
+            <h2>
+              Price: ${content.price}
+              {/* Price: ${service.price} */}
             </h2>
             <div><button 
              onClick={() => handleClick(`${content.option}`)}
-            //  onClick={() => navigate(`/booking/${pageId}`)}
              >Book Service</button></div>
             <div><button onClick={() => navigate("/") }>Back to Home</button></div>
-            <div><button onClick={() => navigate("/services") }>Back to Services</button></div>
+            <div><button onClick={() => navigate("/service") }>Back to Services</button></div>
             </div>
         </section>
     );

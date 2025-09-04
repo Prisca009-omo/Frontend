@@ -1,4 +1,3 @@
-
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -35,13 +34,22 @@ export default function Booking() {
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent page reload
 
+    // Map only what backend expects
+    const payload = {
+      customerName: bookingData.name,
+      customerEmail: bookingData.email,
+      phone: bookingData.phone,
+      service: bookingData.service,
+      status: bookingData.info
+    };
+
     try {
-      const response = await fetch("http://localhost:5000/api/booking", {
+      const response = await fetch("http://localhost:3000/api/addSchedule", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify(bookingData)
+        body: JSON.stringify(payload)
       });
 
       if (!response.ok) {
@@ -69,6 +77,7 @@ export default function Booking() {
           name="name"
           value={bookingData.name}
           onChange={handleChange}
+          required
         />
 
         <input
@@ -77,6 +86,7 @@ export default function Booking() {
           name="email"
           value={bookingData.email}
           onChange={handleChange}
+          required
         />
 
         <input
@@ -85,12 +95,14 @@ export default function Booking() {
           name="phone"
           value={bookingData.phone}
           onChange={handleChange}
+          required
         />
 
         <select
           name="service"
           value={bookingData.service}
-          onChange={handleChange} // now updates bookingData.service
+          onChange={handleChange}
+          required
         >
           <option value="choose">Services type</option>
           <option value="option1">Furniture Assembly</option>
