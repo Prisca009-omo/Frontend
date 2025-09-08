@@ -22,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/service" element={< ServiceListings/>} />
         <Route path="/service/:pageId" element={<ServicePageTemplate/>} />
+        {/* <Route path="/service/:id" element={<ServicePageTemplate/>} /> */}
         <Route path="/about" element={<AboutUs01/>}/>
         <Route path="/gallery" element={<Portfolio/>}/>
         <Route path="/blog" element={<BlogSection/>}/>

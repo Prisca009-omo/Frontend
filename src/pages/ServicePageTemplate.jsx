@@ -31,18 +31,35 @@ export default function ServicePageTemplate(){
 
   const [service, setServices] = useState([]);
 
+  // useEffect(() => {
+  //   fetch("http://localhost:3000/api/services/id") 
+  //     .then(res => res.json())
+  //     .then(data => setServices(data))
+  //     .catch(err => console.error("Error fetching services:", err));
+  // }, []);
+
+  const { id } = useParams(); // get id from URL
+  
   useEffect(() => {
-    fetch("http://localhost:3000/api/services/id") 
-      .then(res => res.json())
-      .then(data => setServices(data))
-      .catch(err => console.error("Error fetching services:", err));
-  }, []);
+      async function fetchservices() {
+      try {
+        const res = await fetch(`http://localhost:3000/services/${id}`);
+        const data = await res.json();
+        setServices(data);
+      } catch (err) {
+        console.error("Error fetching service:", err);
+      }
+    }
+    fetchservices();
+      }, [id]);
+
+      if (!service) return <p>Loading...</p>;
 
     return(
         <section className="servpagetemp">
           <div className="spagecontainer">
             <img src={content.image}  alt=""/>
-            {/*service.image*/}
+            {/* {service.image} */}
             
             <h1>
               {content.title}

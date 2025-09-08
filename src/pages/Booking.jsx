@@ -35,7 +35,7 @@ export default function Booking() {
     e.preventDefault(); // Prevent page reload
 
     // Map only what backend expects
-    const payload = {
+    const formData = {
       customerName: bookingData.name,
       customerEmail: bookingData.email,
       phone: bookingData.phone,
@@ -44,12 +44,12 @@ export default function Booking() {
     };
 
     try {
-      const response = await fetch("http://localhost:3000/api/addSchedule", {
+      const response = await fetch("http://localhost:3000/schedule/addSchedule", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(formData)
       });
 
       if (!response.ok) {
