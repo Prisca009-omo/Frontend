@@ -3,6 +3,11 @@ import { useNavigate,} from "react-router-dom";
 
 function Hero() {
 
+    const handleSubmit = (event) => {
+    event.preventDefault();
+    alert('Schedule sent!');
+  };
+
     const navigate = useNavigate();
 
   return (
@@ -27,7 +32,7 @@ function Hero() {
       
         <div className="hero-form shadow">
           <h3>Pick the Services you Want</h3>
-          <form>
+          <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Full Name" required />
             <input type="email" placeholder="Email Address" required />
             <input type="tel" placeholder="Phone Number" required />
@@ -50,6 +55,7 @@ function Hero() {
             <button type="submit" className="btn btn-secondary">
               Get Schedule
             </button>
+            
           </form>
         </div>
       </div>
@@ -58,4 +64,6 @@ function Hero() {
 }
 
 export default Hero;
+
+
 

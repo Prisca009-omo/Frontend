@@ -564,12 +564,16 @@ margin-left: 0px;
 
 /*working process*/
 .process-section{
-    display: block;
+    display: inline-block;
     background-color: #FFFFFF;
      height: 736px;
      width: 1440px;
      text-align: center;
      padding-top: 120px;
+     align-content: center;
+     justify-items: center;
+     padding-left: 4vw;
+     padding-right: 4vw;
 }
 
 .process-section  h1{
@@ -2309,4 +2313,157 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     background-color: transparent;
     background-color: #FFFFFF;
     box-sizing: border-box;
+}
+
+/*payment*/
+
+#payments-page{
+background-color: #f4f4f4;
+}
+
+.payments-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.payments-container h2{
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.payments-container h4{
+  text-align: center;
+  margin: .05rem;
+  color: #333;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-form label {
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.payment-form input {
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.payment-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.paymentform-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.paymentform-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.paymentform-group input {
+  width: 90%;
+}
+
+.pay-button {
+  background-color: #091054;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Style for select inputs */
+.payment-form select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  appearance: none; /* Remove default arrow for consistent styling */
+  background-image:
+    linear-gradient(45deg, transparent 50%, #555 50%),
+    linear-gradient(135deg, #555 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 25px) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.payment-form select:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Disabled select styling */
+.payment-form select:disabled {
+  background-color: #f5f5f5;
+  color: #999;
+  cursor: not-allowed;
+  border-color: #ddd;
+  background-image: none; /* Remove arrow on disabled */
+}
+
+/* Amount input styling */
+.payment-form input[readonly] {
+  background-color: #e9ecef;
+  color: #495057;
+  cursor: default;
+  border: 1px solid #ced4da;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .payment-form select,
+  .payment-form input[readonly] {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .payments-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .paymentsform-row {
+    flex-direction: column;
+  }
 }

@@ -45,7 +45,7 @@ export default function Booking() {
 
     try {
       const response = await fetch("http://localhost:3000/schedule/addSchedule", {
-        method: "POST",
+        method: "post",
         headers: {
           "Content-Type": "application/json"
         },
@@ -60,7 +60,7 @@ export default function Booking() {
       console.log("Success:", data);
 
       // navigate only after success
-      navigate("/");
+      navigate("/payment");
     } catch (error) {
       console.error("Error:", error);
     }
@@ -127,7 +127,9 @@ export default function Booking() {
           onChange={handleChange}
         ></textarea>
 
-        <button type="submit">Book Service</button>
+        <button 
+        onClick={() => navigate("/payment")} 
+        type="submit">Book Service</button>
       </form>
     </section>
   );

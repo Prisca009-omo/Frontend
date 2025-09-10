@@ -11,6 +11,7 @@ import AboutUs02 from "./components/Home Page/AboutUs02";
 import Portfolio from "./components/Home Page/Portfolio";
 import BlogSection from "./components/Home Page/BlogSection";
 import Booking from "./pages/Booking";
+import PaymentsPage from "./pages/Payments";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/contact" element={<ContactForm/>}/>
         <Route path="/booking" element={<Booking/>}/>
         <Route path="/booking/:pageId" element={<Booking/>} />
+        <Route path="/payment" element={<PaymentsPage/>}/>
       </Routes>
     </Router>
     <Footer/>

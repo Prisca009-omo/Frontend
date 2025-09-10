@@ -1,4 +1,10 @@
+import { useParams, useNavigate } from "react-router-dom";
+
+
 export default function({plan, price, discount}){
+
+    const navigate = useNavigate();
+
     return(
         <div className="pricingcard-section">
             <div>
@@ -12,7 +18,7 @@ export default function({plan, price, discount}){
                 <li>Priority Scheduling</li>
             </ul>
 
-            <button>Choose Plan</button>
+            <button onClick={() => navigate("/payment")}>Choose Plan</button>
             </div>
         </div>
     );
