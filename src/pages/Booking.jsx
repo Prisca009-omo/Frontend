@@ -130,7 +130,7 @@ export default function Booking() {
         ></textarea>
 
         <button 
-        // onClick={() => navigate("/payment")} 
+        onClick={() => navigate("/payment")} 
         type="submit">Book Service</button>
       </form>
     </section>
