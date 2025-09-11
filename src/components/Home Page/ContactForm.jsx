@@ -1,25 +1,3 @@
-// export default function ContactForm(){
-//     return(
-//     <section id="contactform-section">
-//     <img src="/Images/f746f29265c0e7f497a12325ec4c85630b45bb68.png" alt="" />
-//     <form action="">
-//         <h2>Contact Form</h2>
-//         <input type="text" placeholder="Name"/>
-//         <input type="email"  placeholder="E-mail address"/>
-//         <input type="tel" placeholder="Phone"/>
-//        <select>
-//             <option value="option1">Subject</option>
-//             <option value="option2">Option 2</option>
-//             <option value="option3">Option 3</option>
-//             </select>
-//        <textarea placeholder="Message"></textarea>
-
-//         <button type="submit">Send Message</button>
-//     </form>
-//     </section>
-//     );
-// }
-
 import React, { useState } from "react";
 
 export default function ContactForm() {
@@ -45,8 +23,10 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
     try {
-      const response = await fetch("http://localhost:3000/addContact", {
+      const response = await fetch(`${backendUrl}/addContact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
