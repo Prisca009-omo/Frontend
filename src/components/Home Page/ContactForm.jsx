@@ -74,7 +74,7 @@ export default function ContactForm() {
 
   return (
     <section id="contactform-section">
-      <img src="/Images/f746f29265c0e7f497a12325ec4c85630b45bb68.png" alt="" />
+      <img src="/images/f746f29265c0e7f497a12325ec4c85630b45bb68.png" alt="" />
       <form onSubmit={handleSubmit}>
         <h2>Contact Form</h2>
         <input

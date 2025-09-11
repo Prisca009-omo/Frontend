@@ -361,8 +361,8 @@ section{
   text-align: left;
   color: white;
   background-image: 
-    url("/public/Images/bg-shape.png"),  
-    url("/public/Images/bg-main.jpeg");
+    url("/public/images/bg-shape.png"),  
+    url("/public/images/bg-main.jpeg");
   background-position: 
     top 45px left 629px,
     center;   
@@ -811,7 +811,7 @@ margin-top:40px ;
 .cta-section {
     background: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/public/Images/533432c8e2a37be6a65455f842e538823cb69bd5.png");
+    url("/public/images/533432c8e2a37be6a65455f842e538823cb69bd5.png");
     background-size: cover;
     background-repeat: no-repeat ;
     display: flex;
@@ -2239,7 +2239,7 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     width: 100vw;
     height: auto;
     /* background-color: #f4f4f4; */
-    background-image: url("/public/Images/bg-main.jpeg");
+    background-image: url("/public/images/bg-main.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

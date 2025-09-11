@@ -4,8 +4,8 @@ export default function Reviews() {
     return(
         <section className="review-section">
             <div className="review-title">
-        <img src="/Images\Trustpilot_Logo_(2022).svg.png" alt="" />
-        <img src="/Images\stars-5-1.svg" alt="" />
+        <img src="/images/Trustpilot_Logo_(2022).svg.png" alt="" />
+        <img src="/images/stars-5-1.svg" alt="" />
         <h2>Over 400+ reviews On Trust Pilot</h2>
         </div>
         <div className="review-cards-ui">

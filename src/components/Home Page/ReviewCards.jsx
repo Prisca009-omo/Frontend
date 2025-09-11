@@ -6,7 +6,7 @@ export default function ReviewCards({title,review,customerName,daysAgo}){
         <p>{review}</p>
         <p><b>{customerName}</b> <span>- Verified user </span> </p>
         
-        <p><img src="/Images/stars-5-1.svg" alt="" />{daysAgo} days ago</p>
+        <p><img src="/images/stars-5-1.svg" alt="" />{daysAgo} days ago</p>
         
         </div>
     );

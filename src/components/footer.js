@@ -58,7 +58,7 @@ const Footer = () => {
           {/* Brand block */}
           <div className="gg-brand">
             <div className="gg-logo">
-              <img src="/Images/Footer/garden-gems-logo.svg"/>
+              <img src="/images/Footer/garden-gems-logo.svg"/>
       
               <span className="gg-logo-text">
                 <span>Garden</span><br />
@@ -92,10 +92,10 @@ const Footer = () => {
           </div>
 
           <div className="gg-socials">
-            <img src="/Images/Footer/twitter.svg" alt="icon" className="gg-social"/>
-            <img src="/Images/Footer/linkedln.svg" alt="icon"  className="gg-social"/>
-            <img src="/Images/Footer/facebook.svg" alt="icon"  className="gg-social" />
-            <img src="/Images/Footer/instagram.svg" alt="icon"   className="gg-social" />
+            <img src="/images/Footer/twitter.svg" alt="icon" className="gg-social"/>
+            <img src="/images/Footer/linkedln.svg" alt="icon"  className="gg-social"/>
+            <img src="/images/Footer/facebook.svg" alt="icon"  className="gg-social" />
+            <img src="/images/Footer/instagram.svg" alt="icon"   className="gg-social" />
 
 
           </div>
