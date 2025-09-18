@@ -97,7 +97,8 @@ section{
 }
 
 .nav-links a:hover {
-  color: var(--color-secondary);
+  color: #1e2f87;
+  font-size: 1.2rem;
 }
 
 .phone a {
@@ -628,6 +629,13 @@ margin-left: 0px;
     margin: 20px;
     font-size: 1.5rem;
     border-radius: 8px;
+    transition: box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#services-section #button:hover{
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+background-color: #1e2f87;
+color: white;
 }
 
 #services-section h1{
@@ -667,6 +675,8 @@ margin-left: 0px;
 .servicecard-section:hover{
  transform: scale(1.05);
  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+ background-color:white;
+
 }
 
 /*about us 02*/
@@ -738,8 +748,14 @@ width: 260px;
 cursor: pointer;
 border-radius: 8px;
 margin-top:40px ;
+transition: transform 0.2s;
 }
 
+.aboutus02 button:hover{
+  background-color: #1e2f87;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 #aucomponentdiv {
     display: flex;
 }
@@ -796,9 +812,12 @@ margin-top:40px ;
     width: 370px;
     height: 498px;
     margin: 10px;
+    transition: tranform 0.3s;
 
 }
-
+#portfolio img:hover{
+    transform: scale(1.05);
+}
 /*client logo*/
 .clientlogo-section{
     width: 1440px;
@@ -859,6 +878,11 @@ margin-top:40px ;
     border-style: none;
     margin-left: 120px;
 }
+.cta-section button:first-of-type:hover{
+background-color:transparent;
+border-color: #fff;
+border: 2px solid #fff;
+}
 
 .cta-section button{
     background-color: transparent;
@@ -870,6 +894,10 @@ margin-top:40px ;
         width: 244px;
         margin-right: 8px;
         border-radius: 8px;
+}
+.cta-section button:hover{
+background-color: #091054;
+border-color: #091054;
 }
 
 /*Reviews*/
@@ -922,7 +950,10 @@ margin-top:40px ;
     font-size: 17px;
     margin-top: 50px;
 }
-
+.review-section button:hover{
+  background-color: #101e67;
+  color: #fff;
+}
 
 
 .review-cards-ui{
@@ -1009,8 +1040,14 @@ font-size: 24px;
     object-fit: cover;
     clip-path: inset(0% 2% 10% 2%) ;
     background-color:#E9E9E9 ;
+    transition: transform 0.3s;
+    transition: box shadow 0.3;
 }
 
+.teammembers-section img:hover{
+transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
 /*pricing*/
 .pricing-section{
     background-color: #FFFFFF;
@@ -1062,10 +1099,17 @@ font-size: 24px;
         font-size: 24px;
         height: 70px; 
         width: 334px;
-        border-radius: 7gipx;
+        border-radius: 7px;
+        transition:transform 0.3s;
 
 }
+.pricingcard-section button:hover{
+background-color:#101e67 ;
+transform: scale(1.03);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+color: #ddd;
 
+}
 
 
 .pricingcard-section h3{
@@ -1115,7 +1159,7 @@ width: 314px;
     width: 705px;
     justify-content: left;
     align-items: center;
-    margin-top: 120px;
+    margin-top:70px;
     margin-left: 20px;
 }
 
@@ -1123,15 +1167,20 @@ width: 314px;
 
     background-Color:#091054;
     color: #FFFFFF; 
-    height: 80px;
+    height: 75px;
     width: 607px;
     border-radius: 8px;
     font-size: 24px;
     font-weight: bold;
     margin-left: 18px;
+    transition: transform 0.2s;
 
 }
-
+#contactform-section form button:hover{
+transform: scale(1.05);
+background-color: #1e2f87;
+color: #ddd;
+}
 #contactform-section form h2{
     margin-left: 18px;
     font-size: 48px;
@@ -1173,15 +1222,27 @@ width: 314px;
     background-color: transparent;
 }
 
+  #contactform-section form input,
+  #contactform-section form select,
+  #contactform-section form textarea {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+
 /*blog*/
 #blog-section {
     width: 1440px;
-    height: 834px;
+    height: 844px;
     background-color: #FFFFFF;
     text-align: center;
     align-items: center;
     justify-items: center;
     padding-top: 80px;
+    
+}
+#blog-section:hover{
+  transform:scale(1.05);
 }
 
 #blog-section h2 {
@@ -1199,8 +1260,12 @@ width: 370px;
 background-color: #F4F4F4;
 padding: 20px;
 margin-right: 20px;
-
+  transition: transform 0.3s;
 }
+.blogcard-section:hover{
+  transform:scale(0.90);
+}
+
 
 .blogcard-section input{
 height: 304px;
@@ -1398,8 +1463,6 @@ justify-items: center;
     font-size: 48px;
 }
 
-
-
 .servpagetemp button{
     background-color: #FFFFFF;
     color: #2937B1;
@@ -1420,9 +1483,6 @@ justify-items: center;
     align-items: center;
     text-align: center;
 }
-
-
-
 
 
 img, video {
@@ -1638,7 +1698,8 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     padding: 20px;
   }
   .profesionalsteam-section {
-    height: auto;
+    /* height: auto; */
+    height: 400vh;
     padding-top: 60px;
     width: 100vw;
   }
@@ -1747,6 +1808,10 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     gap: 10px;
     padding: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .hero-text button,
   .hero-form button {
@@ -1763,6 +1828,10 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     padding: 10px;
     font-size: 1rem;
     height: auto;
+  }
+
+  .hero-form{
+    min-width: 80%;
   }
   #aboutus01-section {
     padding-top: 30px;
@@ -1799,6 +1868,7 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     width: 100vw;
     min-width: 0;
   }
+  
   .servicecard-section,
   .review-cards,
   .pricingcard-section,
@@ -1830,13 +1900,25 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     max-width: 320px;
     margin-left: 0;
     font-size: 1rem;
+    box-sizing: border-box;
   }
+
+
   .logo-section #awards,
   .logo-section #cards {
     width: 100vw;
     max-width: 100%;
     padding-top: 20px;
   }
+
+  .logo-section #cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
   .logo-section #cards .cards-subsection {
     flex-direction: column;
     width: 100vw;
@@ -1992,6 +2074,7 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
   .testimonial-carousel-image {
     width: 80px;
     height: 80px;
+    transition: opacity 1s ease-in-out;
   }
   .testimonial-carousel-text {
     font-size: 1.1rem;
@@ -2279,91 +2362,118 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
 }
 
 /*booking form*/
-#bookingform{
-    display: flex;
-    width: 100vw;
-    height: auto;
-    /* background-color: #f4f4f4; */
-    background-image: url("/public/images/bg-main.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: auto;
+#bookingform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("/public/images/bg-main.jpeg") no-repeat center center/cover;
+  text-align: center;
+  flex-direction: column;
 }
 
-
-#bookingform form{
-    height: 834px;
-    width: 705px;
-    justify-content: left;
-    align-items: center;
-    margin-top: 120px;
-    margin-left: 20px;
+#bookingform form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  border-radius:10px;
+  width: 550px;
+  margin-top: 60px;
+  height: 360px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  height: auto;
 }
 
-#bookingform form button{
-
-    background-Color:#091054;
-    color: #FFFFFF; 
-    height: 80px;
-    width: 40%;
-    border-radius: 8px;
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 18px;
-
-}
-
-#bookingform form h2{
-    margin-left: 18px;
-    font-size: 48px;
-    color:  #FFFFFF;;
+#bookingform h2 {
+  text-align: center;
+  /* font-size: 55px; */
+  /* letter-spacing: 4px; */
+  font-weight: bold;
+  /* color: white;
+  margin-bottom: 0%;
+  text-align: center; */
+  margin-bottom: 1.5rem;
+  color: #333;
 }
 
 
 #bookingform form input{
-    height: 84px;
-    width: 70vw;
-    color: #091054;
-    padding: 14px 8px;
-    border-width: 1px;
-    border-radius: 8px;
-    margin-bottom: 18px;
-    margin-left: 18px;
-    background-color: #FFFFFF;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
-#bookingform form select{
-    height: 84px;
-    width: 70vw;
-    color: #091054;
-    padding: 14px 8px;
-    border-width: 1px;
-    border-radius: 8px;
-    margin-bottom: 18px;
-    margin-left: 18px;
-    background-color: transparent;
-    background-color: #FFFFFF;
-    box-sizing: border-box;
+
+
+#bookingform form input,
+#bookingform form select {
+  width: 87%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1rem;
 }
+
+#bookingform form button{
+  display: block;
+  margin: 2px auto 0;
+  background: #091054;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  padding: 20px 50px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+
 #bookingform form textarea{
-    height: 106px;
-    width: 70vw;
-    padding: 14px 8px;
+    height: 66px;
+    /* width: 35vw; */
+    box-sizing: border-box;
+    width: 87%;
+    padding: 5px 8px;
+    margin-top: 20px;
     border-width: 1px;
+    border: 1px solid #ccc;
     border-radius: 8px;
     margin-bottom: 18px;
-    margin-left: 18px;
     background-color: transparent;
     background-color: #FFFFFF;
     box-sizing: border-box;
+    border-top:none;
+    border-left:none;
+    border-right: none;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 600px) {
+#bookingform {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#bookingform form {
+  width: 80%;
+}
 }
 
 /*payment*/
 
 #payments-page{
-background-color: #f4f4f4;
+/* background-color: #f4f4f4; */
+  background: url("/public/images/bg-main.jpeg") no-repeat center center/cover;
+
 }
 
 .payments-container {
@@ -2406,6 +2516,9 @@ background-color: #f4f4f4;
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
+  border-top:none;
+  border-left:none;
+  border-right: none;
 }
 
 .payment-form input:focus {
@@ -2464,6 +2577,9 @@ background-color: #f4f4f4;
   background-repeat: no-repeat;
   cursor: pointer;
   transition: border-color 0.3s ease, background-color 0.3s ease;
+  border-top:none;
+  border-left:none;
+  border-right: none;
 }
 
 .payment-form select:focus {
