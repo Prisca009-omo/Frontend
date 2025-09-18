@@ -4,8 +4,10 @@ import ListedServices from "../components/Service Page/ListedServices";
 export default function ServicesListings() {
   const [services, setServices] = useState([]);
 
+  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
   useEffect(() => {
-    fetch("http://localhost:3000/service/services")
+    fetch(`${backendUrl}/service/services`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
