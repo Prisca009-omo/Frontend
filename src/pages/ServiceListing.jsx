@@ -5,7 +5,7 @@ export default function ServicesListings() {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/service/services")
+    fetch("https://backend-w151.onrender.com/service/services")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
