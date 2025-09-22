@@ -63,7 +63,7 @@ const TestimonialCarousel = () => {
         className="testimonial-carousel-arrow"
         aria-label="Previous testimonial"
       >
-        &#129104;
+        {`\u2190`}
       </button>
       <div className="testimonial-carousel-content">
         <img src={image} alt={name} className="testimonial-carousel-image" />
@@ -75,7 +75,7 @@ const TestimonialCarousel = () => {
         className="testimonial-carousel-arrow"
         aria-label="Next testimonial"
       >
-        &#129106;
+        {`\u2192`}
       </button>
     </div>
   );
