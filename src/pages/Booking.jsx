@@ -61,10 +61,13 @@ export default function Booking() {
       const data = await response.json();
       console.log("Success:", data);
 
+      alert("Form Submitted!");
+
       // navigate only after success
       navigate("/payment");
     } catch (error) {
       console.error("Error:", error);
+      alert("Form not submitted");
     }
   };
 
@@ -149,7 +152,7 @@ export default function Booking() {
           onChange={handleChange}
         ></textarea>
 
-        <button onClick={() => navigate("/payment")} type="submit">
+        <button type="submit">
           Book Service
         </button>
       </form>
